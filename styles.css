@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* color codes=========== */
+/* #4C5FD5
+
+#dadbf1
+
+#000000
+
+#fff */
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    /* position: sticky; */
+    overflow-y: hidden;
+    background-color: black;
+    padding-block: 1.75rem;
+    /* border-bottom: 1px solid white; */
+    /* z-index: 5; */
+    /* padding-bottom: 1rem; */
+}
+   
+
+
+.container--header {
+    width: 90%;
+    margin-inline:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+   
+.logo {
+    color: white;
+}
+.bars {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    transition: all 0.25s ease-in-out;
+}
+
+.cross-menu-one {
+    transform: rotate(45deg);
+}
+.cross-menu-two {
+    transform: rotate(-45deg);
+}
+
+
+.bars:last-child {
+    margin-top: .5rem;
+}
+
+ul {
+    position: absolute;
+    top:-500px;
+    transition: all 0.5s ease-out;
+    left: 0;
+    right: 0;
+    padding-block: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.logo h1 span {
+    font-weight: 500;
+}
+
+/* hamburger=============== */
+
+#menu:hover {
+    cursor: pointer;
+
+
+}
+i {
+    max-width: 100%;
+}
+.active {
+    /* width: 100%; */
+    border-top: 1px solid white;
+    background-color: #000000;
+    
+    position: absolute;
+    top: 88px;
+    
+}
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+.items {
+    width: 70%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.list--items a {
+    color: white;
+    text-decoration: none;
+}
+.list--items a:hover {
+    color: rgb(165, 165, 165);
+}
+/* how can we help================ */
+
+.hero--section {
+    background-color: #dadbf1;
+    padding-block: 8rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -2.5px;
+}
+
+.input--box {
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 4px;
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size:1.25rem;
+}
+
+
+/* abstract section====================== */
+
+.using--container {
+    width: 85%;
+    margin: 5rem auto;
+}
+
+.abstract {
+    max-width: 600px;
+    margin-top:4rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+}
+
+.text--abstract {
+    width: 70%;
+}
+
+.text--abstract h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.text--abstract p {
+    margin-block: 1rem;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+a {
+    font-size: 20px;
+    line-height: 28px;
+    color: #4C5FD5;
+}
+
+/* footer--container=============== */
+
+.footer--container {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.column {
+    padding: 1rem 2rem;
+}
+
+.input--box:focus-within {
+    border: 1px solid blue;
+}
+
+.footer--flexbox {
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+}
+
+
+.lower--titles {
+    margin-top: .75rem;
+}
+.lower--titles a {
+    display: block;
+    color: white;
+    font-size: 1rem;
+}
+
+@media (min-width: 950px) {
+    .using--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 6rem;
+    }
+
+    .abstract {
+        margin-bottom: 2rem;
+    }
+    .title {
+        font-size: 4rem;
+    }
+}
